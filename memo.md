@@ -1,0 +1,7 @@
+# memo
+
+## Presentational CompornentとContainer Component
+Presentational Componentは見た目を実装するためのコンポーネント
+Container Compornentはロジックのみを実装するコンポーネント
+2つに分けることによって保守性の高いコードにすることができる
+
