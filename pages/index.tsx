@@ -8,6 +8,15 @@ const H1 = styled.h1`
   color: red;
 `
 
+const Badge = styled.a`
+  padding: 8px 16px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background: red;
+  border-radius: 16px;
+`
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -21,6 +30,8 @@ const Home: NextPage = () => {
         <H1>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </H1>
+        
+        <Badge href="#">Hello World!</Badge>
 
         <p className={styles.description}>
           Get started by editing{' '}
