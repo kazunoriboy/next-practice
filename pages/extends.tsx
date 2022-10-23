@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import styled from "styled-components";
 
 const Text = styled.p`
-  color: bule;
+  color: blue;
   font-weight: bold;
 `
 
