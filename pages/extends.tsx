@@ -15,7 +15,7 @@ const BorderedText = styled(Text)`
 const Page: NextPage = () => {
   return (
     <div>
-      <Text>Hello</Text>
+      <Text as="a" href="/">Hello</Text>
       <BorderedText>World</BorderedText>
     </div>
   )
