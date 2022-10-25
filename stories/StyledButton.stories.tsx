@@ -4,6 +4,7 @@ import { StyledButton } from "../pages/components/StyledButton";
 export default {
   title: 'StyledButton',
   component: StyledButton,
+  argTypes: { onClick: { action: 'clicked' } },
 } as ComponentMeta<typeof StyledButton>
 
 export const Primary = (props: []) => {
