@@ -1,0 +1,41 @@
+<!-- StyledButton.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import { StyledButton } from '../pages/components/StyledButton';
+
+<Meta title="StyledButton">
+
+export const MDXDocument = (args) => <StyledButton {...args} />
+
+## StyledButton
+
+StyledButtonはカスタムコンポーネントです。`variant`でボタンの色を切り替えることができます。
+
+- [primary](#primary)
+- [Success](#success)
+- [Transparent](#transparent)
+
+### Primary
+
+```tsx
+<StyledButton variant="primary">Primary</StyledButton>
+```
+
+<StyledButton variant="primary">Primary</StyledButton>
+
+### Success
+
+```tsx
+<StyledButton variant="success">Success</StyledButton>
+```
+
+<StyledButton variant="primary">Primary</StyledButton>
+
+### Transparent
+
+```tsx
+<StyledButton variant="transparent">Transparent</StyledButton>
+```
+
+<StyledButton variant="transparent">Transparent</StyledButton>
+

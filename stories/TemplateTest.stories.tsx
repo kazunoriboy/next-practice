@@ -1,5 +1,7 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { StyledButton } from "../pages/components/StyledButton";
+import MDXDocument from './StyledButton.mdx'
+
 
 export default {
   title: 'StyledButton',
@@ -13,6 +15,9 @@ export default {
       control: { type: 'text' },
     },
   },
+  parameters: {
+    page: MDXDocument
+  }
 } as ComponentMeta<typeof StyledButton>
 
 const Template: ComponentStory<typeof StyledButton> = (args) => <StyledButton {...args} />
