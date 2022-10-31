@@ -1,7 +1,6 @@
-import React, { useState } from "react";
 import { ComponentMeta } from "@storybook/react";
 import { StyledButton } from "../pages/components/StyledButton";
-import { action } from "@storybook/addon-actions"
+import { linkTo } from "@storybook/addon-links"
 
 export default {
   title: 'StyledButton',
@@ -9,24 +8,17 @@ export default {
   argTypes: { onClick: { action: 'clicked' } },
 } as ComponentMeta<typeof StyledButton>
 
-const incrementAction = action('increment')
-
 export const Primary = (props: []) => {
-  const [count, setCount] = useState(0)
-  const onClick = (e: React.MouseEvent) => {
-    incrementAction(e, count)
-    setCount((c) => c + 1)
-  }
   return (
-    <StyledButton {...props} variant="primary" onClick={onClick}>
-      Count: {count}
+    <StyledButton {...props} variant="primary" onClick={linkTo('StyledButton', 'Success')}>
+      Primary
     </StyledButton>
   )
 }
 
 export const Success = (props: []) => {
   return (
-    <StyledButton {...props} variant="success">
+    <StyledButton {...props} variant="success" onClick={linkTo('StyledButton', 'Transparent')}>
       Success
     </StyledButton>
   )
@@ -34,7 +26,7 @@ export const Success = (props: []) => {
 
 export const Transparent = (props: []) => {
   return (
-    <StyledButton {...props} variant="transparent">
+    <StyledButton {...props} variant="transparent" onClick={linkTo('StyledButton', 'Primary')}>
       Transparent
     </StyledButton>
   )
