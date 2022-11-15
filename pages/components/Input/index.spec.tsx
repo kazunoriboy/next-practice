@@ -8,4 +8,7 @@ describe('Input', () => {
     renderResult = render(<Input id="username" label="Username" />)
   })
 
+  afterEach(() => {
+    renderResult.unmount()
+  })
 })
