@@ -3,4 +3,9 @@ import { Input } from './index'
 
 describe('Input', () => {
   let renderResult: RenderResult
+
+  beforeEach(() => {
+    renderResult = render(<Input id="username" label="Username" />)
+  })
+
 })
