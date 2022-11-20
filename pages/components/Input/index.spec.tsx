@@ -11,4 +11,10 @@ describe('Input', () => {
   afterEach(() => {
     renderResult.unmount()
   })
+
+  it('should empty in input on initial render', () => {
+    const inputNode = screen.getByLabelText('Username') as HTMLInputElement
+
+    expect(inputNode.textContent).toBe('')
+  })
 })
